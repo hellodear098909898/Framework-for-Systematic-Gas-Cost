@@ -1,0 +1,174 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "getInspection",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "inspectionId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "report",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "approved",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct InspectionModule.Inspection",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "inspectionCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "inspections",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "inspectionId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "report",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "isApproved",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_report",
+						"type": "string"
+					}
+				],
+				"name": "submitInspection",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_report",
+						"type": "string"
+					}
+				],
+				"name": "updateInspection",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Unoptimized Inspection Module.sol": "InspectionModule"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Unoptimized Inspection Module.sol": {
+			"keccak256": "0xbd296b3a3825d38e7a9a2306547d074f4b0eca3819a4fa0de7d253d3f20dbd6c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e5a44541c3cecb78ecf929580636ab2cd73a1839476c3cc99ae0e0e5b4b2419f",
+				"dweb:/ipfs/QmeRDijADrT94zgfM7EeFynpVaExCtY8nt2rirRQTYfsCQ"
+			]
+		}
+	},
+	"version": 1
+}

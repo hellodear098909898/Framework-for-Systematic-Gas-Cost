@@ -1,0 +1,200 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "materialId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "supplier",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "quantity",
+						"type": "uint256"
+					}
+				],
+				"name": "MaterialAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "materialId",
+						"type": "uint256"
+					}
+				],
+				"name": "MaterialDelivered",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "supplier",
+						"type": "address"
+					}
+				],
+				"name": "SupplierRegistered",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_quantity",
+						"type": "uint256"
+					}
+				],
+				"name": "addMaterial",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_materialId",
+						"type": "uint256"
+					}
+				],
+				"name": "deliverMaterial",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_materialId",
+						"type": "uint256"
+					}
+				],
+				"name": "findMaterial",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "supplier",
+								"type": "address"
+							},
+							{
+								"internalType": "uint128",
+								"name": "quantity",
+								"type": "uint128"
+							},
+							{
+								"internalType": "uint64",
+								"name": "materialId",
+								"type": "uint64"
+							},
+							{
+								"internalType": "bool",
+								"name": "delivered",
+								"type": "bool"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							}
+						],
+						"internalType": "struct MaterialSupply.Material",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "materialCounter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "registerSupplier",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"optimized material supply contract.sol": "MaterialSupply"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"optimized material supply contract.sol": {
+			"keccak256": "0x97c6d3bb5a704101fee8ac072dce57fc822a1d0da26e4cc521124e6cb6a3fc6c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a47d6d4f339dc521254ddd968c787761c947fd1b685ffbc4053795e7c599f002",
+				"dweb:/ipfs/QmUHEi44o5CqE3JnE8EGWXuAU5r5pM6pYQvadWHv9ktYEj"
+			]
+		}
+	},
+	"version": 1
+}
