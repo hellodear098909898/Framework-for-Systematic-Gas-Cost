@@ -1,6 +1,6 @@
 # Framework for Systematic Gas Cost Optimization of Ethereum Smart Contracts
 
-This repository contains the official implementation of a systematic gas optimization framework for Ethereum smart contracts. By addressing architectural inefficiencies at the design phase, this framework achieves a documented **average gas reduction of 35.31%**. 
+This repository contains the official implementation of a systematic gas optimization framework for Ethereum smart contracts. 
 
 The effectiveness of this approach is validated through two domain-specific case studies: **Pharmaceutical Supply Chain** and **Construction Management**.
 
